@@ -1,12 +1,13 @@
 *{
     margin:0;
 }
+
 body{
     background-color: rgb(30, 34, 44);
 
 }
 nav{
-    border-bottom: 2px solid rgb(15, 15, 17);
+
     background-color:  rgb(23, 26, 40);
     text-align: center;
     padding: 45px;
@@ -14,16 +15,105 @@ nav{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     
-    
 
 }
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    
+
+
+}
+nav ul li{
+
+    display: inline;
+    float:right;
+    margin-right: 130px;
+    
+}
+
+nav ul #resume{
+    display: block;
+    padding: 18px;
+    background-color: rgb(23, 26, 40);
+    border: 2px solid rgb(228, 139, 123);
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-top: -40px;
+
+}
+nav ul #contact{
+    
+    display: block;
+    padding: 18px;
+    background-color: rgb(23, 26, 40);
+    border: 2px solid rgb(228, 139, 123);
+    color: white;
+    margin-left: 35px;
+    border-radius: 5px;
+    margin-top: -40px;
+
+
+    
+}
+
+#top-hr{
+    background-color: rgba(193, 127, 101, 0.191);
+    border: none;
+    height: 1px;
+
+}
+
+nav ul #contact-link #contact:hover{
+    border:2px solid white;
+    color: rgb(228, 139, 123);
+    background-color: white;
+    animation-name: fade;
+    animation-duration: .5s;
+
+
+}
+nav ul #resume-link #resume:hover{
+    border:2px solid white;
+    color: rgb(228, 139, 123);
+    background-color: white;
+    animation-name: fade;
+    animation-duration: .5s;
+
+
+}
+
+@keyframes fade {
+    0%{background-color: rgb(23, 26, 40);
+        border: 2px solid rgb(228, 139, 123);
+        color: white;}
+    100%{
+        border:2px solid white;
+        color: rgb(228, 139, 123);
+        background-color: white;
+    }
+    
+}
+
+#tamuc-logo{
+
+}
+
+
+
+
+
 #about{
     margin-top: 80px;
   
     
 
 }
-#about p{
+p{
     font-size: 35px;
     color: white;
     margin-left: 170px;
@@ -56,8 +146,20 @@ nav{
 
 
 
+
+
+
+#info p{
+    color: rgba(237, 237, 237, 0.611);
+    font-size: 24px;
+    
+}
+
+
+
+
 @media only screen and (max-width: 1500px){
-    #about p{
+    p{
         margin-left: 90px;
     }
     #about img{
@@ -69,9 +171,15 @@ nav{
 
         
     }
+    nav ul li{
+
+
+        margin-right: 40px;
+        
+    }
   }
 
-@media only screen and (max-width: 871px) {
+@media only screen and (max-width: 909px) {
     #about img{
 
         justify-content: center;
@@ -84,13 +192,27 @@ nav{
         display: block;
         
     }
-  }
-  @media only screen and (max-width: 701px){
-    #about p{
+    p{
         font-size: 35px;
         color: white;
-        margin-left: auto;
+        margin-left: 20px;
+        margin-right: 20px;
         text-align: center;
     }
+    nav ul #resume{
+        display: none;
+
+    
+    }
+    nav ul #contact{
+        
+        display: none;
+    
+    
+        
+    }
+  }
+  @media only screen and (max-width: 701px){
+
   }
 
