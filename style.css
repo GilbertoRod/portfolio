@@ -261,6 +261,12 @@ hr{
     font-size: 20px;
 }
 
+.card-body-text{
+    margin-top:15px;
+    font-size: 18px;
+    color: rgb(182, 178, 178);
+}
+
 @media only screen and (max-width: 1096px){
     #contact{
         display: none;
