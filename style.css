@@ -5,13 +5,18 @@
 body{
     background-color: rgb(30, 34, 44);
     padding-bottom: 50px; 
+    padding-top: 100px;
+
     
 }
 nav{
-
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left:0px;
     background-color: rgb(30, 34, 44);
     text-align: center;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
     padding-top: 15px;
     color: rgb(79, 235, 144);
     font-family:pacifico, 'Times New Roman', Times, serif;
@@ -40,7 +45,7 @@ nav ul li{
 
 #resume{
     display: block;
-    padding: 18px;
+    padding: 12px;
     background-color: rgb(30, 34, 44);
     border: 2px solid rgb(79, 235, 144);
     margin-right: 5px;
@@ -55,7 +60,7 @@ nav ul li{
 #contact{
     
     display: block;
-    padding: 18px;
+    padding: 12px;
     background-color: rgb(30, 34, 44);
     border: 2px solid rgb(79, 235, 144);
     color: white;
@@ -201,7 +206,7 @@ hr{
 
 
 .bottom-content{
-    justify-content:center;
+    justify-content:space-evenly;
     display: flex;
     flex-flow: row wrap;
     margin-right: 130px;
@@ -219,6 +224,11 @@ hr{
     margin-top: 50px;
     box-shadow: 0px 0px 12px rgba(50, 56, 71, 0.89);
     border: 1px solid rgba(75, 73, 73, 0.445);
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
     
 }
 
@@ -230,6 +240,8 @@ hr{
     object-fit:cover;
     object-position:bottom;
     margin-bottom: 0px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .info {
@@ -237,15 +249,19 @@ hr{
     margin-top: -5px;
     color:white;
     height: 405px;
-    
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
 
 }
 .text{
     padding: 20px;
 }
+.card-title{
+    font-weight: bold;
+    font-size: 20px;
+}
 
-
-@media only screen and (max-width: 1181px){
+@media only screen and (max-width: 1096px){
     #contact{
         display: none;
     }
@@ -253,10 +269,24 @@ hr{
     #resume{
         display: none;
     }
+    
+    .top-content{
+        justify-content: center;
+    }
+    .personal-image{
+
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+    .my-pic{
+        height: 450px;
+
+    }
+
 }
 
 
-@media only screen and (max-width: 856px){
+@media only screen and (max-width: 858px){
     
 
 
@@ -285,6 +315,7 @@ hr{
 
 
     }
+
 }
 
 
