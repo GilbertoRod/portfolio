@@ -213,6 +213,13 @@ hr{
 
 
 /* projects*/
+
+
+#project-hr{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+
 .bottom-content{
     justify-content:space-evenly;
     display: flex;
@@ -334,6 +341,10 @@ hr{
         margin-right: 90px;
         margin-left: 90px;
     }
+    #project-hr{
+        margin-right: 90px;
+        margin-left: 90px;
+    }
 }
 
 @media only screen and (max-width: 1096px){
@@ -436,7 +447,10 @@ hr{
         margin-right: 20px;
         margin-left: 20px;
     }
-
+    #project-hr{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
     .bottom-content{
 
