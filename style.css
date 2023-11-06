@@ -4,7 +4,7 @@
 
 body{
     background-color: rgb(30, 34, 44);
-    padding-bottom: 50px; 
+    padding-bottom: 150px; 
     padding-top: 100px;
 
     
@@ -183,8 +183,41 @@ hr{
     color: rgba(237, 237, 237, 0.611);
     font-size: 18px;
 
+}
+
+#link-button{
+    margin-top: 20px;
+    border:none;
+    height: 40px;
+    background-color: rgb(32, 32, 32);
+    color:rgb(79, 235, 144);
+    border: 1px solid rgb(79, 235, 144);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+#link-button:hover{
+    border:2px solid rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
+    background-color: rgb(79, 235, 144);
+    animation-name: fade-link;
+    animation-duration: .5s;
+
+
+}
+
+@keyframes fade-link {
+    0%{ background-color: rgb(30, 34, 44);
+        border: 2px solid rgb(79, 235, 144);
+        color: white;}
+    100%{
+        border:2px solid rgb(32, 32, 32);
+        color: rgb(32, 32, 32);
+        background-color: rgb(79, 235, 144);
+    }
     
 }
+
 
 /* About me styles*/
 .about-section{
@@ -305,6 +338,41 @@ hr{
     display: inline-block;
 }
 
+
+
+
+
+
+/*Footer*/
+
+footer{
+    margin-top: 80px;
+}
+footer hr{
+    opacity: .1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Sizing*/
 
 
 @media only screen and (max-width:1334px){
