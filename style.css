@@ -139,7 +139,6 @@ nav ul li{
 
 .intro{
     margin-top: 80px;
-    
     display:inline-block;
     vertical-align: top;
 
@@ -168,7 +167,6 @@ big{
 
 hr{
     margin-top: 30px;
-
     border-color: rgb(79, 235, 144);
     border-radius: 15px;
  
@@ -181,36 +179,47 @@ hr{
 }
 
 #academic-info p{
-    line-height: 30px;
+    line-height: 23px;
     color: rgba(237, 237, 237, 0.611);
     font-size: 18px;
 
     
 }
 
-/* picture*/
-
-.personal-image{
-
-    margin-left: 85px;
+/* About me styles*/
+.about-section{
+ 
     margin-top: 80px;
-    
+    max-width: 490px;
     
 }
-.my-pic{
-    height: 350px;
-    border-radius: 5px;
 
-    border: 2px solid rgb(79, 235, 144);
+.about-paragraph {
+    max-width: 100%;
+    line-height: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#about-hr{
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 
+
+
+
+
+/* projects*/
 .bottom-content{
     justify-content:space-evenly;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow:wrap;
     margin-right: 130px;
     margin-left: 130px;
+ 
     
 
 }
@@ -218,7 +227,7 @@ hr{
 
 
 .card{
-    height: 810px;
+    height: 860px;
     width: 500px;
     margin-right: 20px;
     margin-top: 50px;
@@ -248,17 +257,46 @@ hr{
     background-color: rgb(45, 49, 85);
     margin-top: -5px;
     color:white;
-    height: 405px;
+    height: 455px;
     border-bottom-left-radius:15px;
     border-bottom-right-radius:15px;
+}
+
+.tech-stack{
+   margin-left: 330px;
+   margin-top: 10px;
 
 }
+.stack-image{
+    margin-right: 10px;
+}
+
+
+.tech-stack-2{
+    margin-left: 360px;
+    margin-top: 35px;
+ 
+ }
+ .tech-stack-3{
+    margin-left: 390px;
+    margin-top: 200px;
+ 
+ }
 .text{
     padding: 20px;
+    line-height: 26px;
+    padding-bottom: 0px;
 }
 .card-title{
+    display: inline-block;
     font-weight: bold;
     font-size: 20px;
+    color: rgb(79, 235, 144);
+}
+.repo{
+    margin-top: -5px;
+    float: right;
+    cursor: pointer;
 }
 
 .card-body-text{
@@ -267,32 +305,129 @@ hr{
     color: rgb(182, 178, 178);
 }
 
-@media only screen and (max-width: 1096px){
-    #contact{
-        display: none;
+
+
+@media only screen and (max-width:1334px){
+
+    .about-section{
+ 
+        margin-top: 80px;
+        max-width: 100%;
+        
+    }
+    hr{
+        margin-top: 30px;
+        border-color: rgb(79, 235, 144);
+        border-radius: 15px;
+        
     }
 
-    #resume{
-        display: none;
+    .intro{
+        margin-top: 80px;
+        vertical-align: top;
+        max-width: 100%;
     }
+
+    
+    .top-content{
+        justify-content: center;
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 1096px){
+ 
     
     .top-content{
         justify-content: center;
     }
-    .personal-image{
-
-        margin-left: 0px;
-        margin-top: 80px;
-    }
-    .my-pic{
-        height: 450px;
-
-    }
 
 }
 
+@media only screen and (max-width:808px){
+    nav ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    
+        
+    
+    
+    }
+    nav ul li{
+    
+        display: inline;
+        float:right;
+        margin-right: 80px;
+        
+    }
+    
+    #resume{
+        display: block;
+        padding: 12px;
+        background-color: rgb(30, 34, 44);
+        border: 2px solid rgb(79, 235, 144);
+        margin-right: 5px;
+        border-radius: 5px;
+        color: white;
+        margin-top: -40px;
+        font-family:Oxygen, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        float: left;
+        margin-left: 80px;
+        
+    
+    }
+    #contact{
+        
+        display: block;
+        padding: 12px;
+        background-color: rgb(30, 34, 44);
+        border: 2px solid rgb(79, 235, 144);
+        color: white;
+        margin-left: 35px;
+        border-radius: 5px;
+        margin-top: -40px;
+        font-family:Oxygen, 'Times New Roman', Times, serif;
+        font-size: 18px;
+    
+    }
+    
+    #contact:hover{
+        border:2px solid white;
+        color: rgb(30, 34, 44);
+        background-color: rgb(79, 235, 144);
+        animation-name: fade;
+        animation-duration: .5s;
+    
+    
+    }
+    #resume:hover{
+        border:2px solid white;
+        color: rgb(30, 34, 44);
+        background-color: rgb(79, 235, 144);
+        animation-name: fade;
+        animation-duration: .5s;
+    
+    
+    }
+    
+    
+    @keyframes fade {
+        0%{ background-color: rgb(30, 34, 44);
+            border: 2px solid rgb(79, 235, 144);
+            color: white;}
+        100%{
+            border:2px solid white;
+            color: rgb(30, 34, 44);
+            background-color: rgb(79, 235, 144);
+        }
+        
+    }
+}
 
-@media only screen and (max-width: 858px){
+@media only screen and (max-width: 950px){
     
 
 
@@ -301,11 +436,7 @@ hr{
         margin-right: 20px;
         margin-left: 20px;
     }
-    .personal-image{
 
-        margin-left: 0px;
-        margin-top: 80px;
-    }
 
     .bottom-content{
 
