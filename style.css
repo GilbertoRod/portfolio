@@ -16,8 +16,8 @@ nav{
     left:0px;
     background-color: rgb(30, 34, 44);
     text-align: center;
-    padding-bottom: 25px;
-    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 5px;
     color: rgb(79, 235, 144);
     font-family:pacifico, 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -109,7 +109,7 @@ nav ul li{
 
 
 /* body container*/
-.not-nav {
+.container {
 
     margin-top: 1px;
     margin-right: 0px;
@@ -234,7 +234,7 @@ hr{
 
 
 .card{
-    height: 860px;
+    height: 1000px;
     width: 500px;
     margin-right: 20px;
     margin-top: 50px;
@@ -264,31 +264,20 @@ hr{
     background-color: rgb(45, 49, 85);
     margin-top: -5px;
     color:white;
-    height: 455px;
+    height: 595px;
     border-bottom-left-radius:15px;
     border-bottom-right-radius:15px;
 }
 
-.tech-stack{
-   margin-left: 330px;
-   margin-top: 10px;
 
-}
 .stack-image{
-    margin-right: 10px;
+    margin-left: 12px;
+    margin-top: 13px;
+    float:inline-end
 }
 
 
-.tech-stack-2{
-    margin-left: 360px;
-    margin-top: 35px;
- 
- }
- .tech-stack-3{
-    margin-left: 390px;
-    margin-top: 200px;
- 
- }
+
 .text{
     padding: 20px;
     line-height: 26px;
@@ -310,6 +299,10 @@ hr{
     margin-top:15px;
     font-size: 18px;
     color: rgb(182, 178, 178);
+}
+.my-stack{
+    color:rgb(79, 235, 144);
+    display: inline-block;
 }
 
 
@@ -355,6 +348,44 @@ hr{
     }
 
 }
+
+
+
+@media only screen and (max-width: 950px){
+    
+
+
+    .top-content{
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #project-hr{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .bottom-content{
+
+        margin-right: 5px;
+        margin-left: 5px;
+        
+    
+    }
+    .card{
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+
+    }
+
+
+
+}
+
+
+
 
 @media only screen and (max-width:808px){
     nav ul{
@@ -402,6 +433,7 @@ hr{
         margin-top: -40px;
         font-family:Oxygen, 'Times New Roman', Times, serif;
         font-size: 18px;
+        float: right;
     
     }
     
@@ -438,37 +470,76 @@ hr{
     }
 }
 
-@media only screen and (max-width: 950px){
-    
+@media only screen and (max-width:530px){
+    #resume{
+        padding: 8px;
+        margin-left: 19px;
 
-
-    .top-content{
-        justify-content: center;
-        margin-right: 20px;
-        margin-left: 20px;
     }
-    #project-hr{
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    .bottom-content{
-
-        margin-right: 0px;
-        margin-left: 0px;
-        
     
+    #contact{
+        padding: 8px;
+        margin-right: 19px;
+
     }
     .card{
-
-        margin-right: 20px;
-        margin-left: 20px;
-
-
+        height: 1000px;
+        width: 500px;
     }
+
 
 }
 
 
+@media only screen and (max-width:431px){
+    .card{
+        height: 1105px;
+        width: 500px;
+    }
+    .info{
+        height: 700px;
+    }
+    #small-card .info {
+        height: 450px;
+    }
+    #small-card{
+        height: 855px;
+    }
+}
+
+@media only screen and (max-width:359px){
+    .card{
+        height: 1305px;
+        width: 500px;
+    }
+    .info{
+        height: 900px;
+    }
+}
+
+
+@media only screen and (max-width:325px){
+    big{
+        font-size: 60px;
+    }
+    
+}
+@media only screen and (max-width:310px){
+
+    .card{
+        height: 1455px;
+        width: 500px;
+    }
+    .info{
+        height: 1050px;
+    }
+
+    #small-card .info {
+        height: 550px;
+    }
+    #small-card{
+        height: 955px;
+    }
+}
 
 
