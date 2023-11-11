@@ -559,6 +559,23 @@ footer hr{
 }
 
 
+
+
+@media only screen and (max-width:522px){
+
+
+    #till-card .info {
+        height: 895px;
+    }
+    #till-card{
+        height: 1300px;
+    }
+}
+
+
+}
+
+
 @media only screen and (max-width:431px){
     .card{
         height: 1105px;
@@ -575,7 +592,7 @@ footer hr{
     }
 }
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:398px){
     .card{
         height: 1305px;
         width: 500px;
@@ -583,6 +600,16 @@ footer hr{
     .info{
         height: 900px;
     }
+
+    #till-card .info {
+        height: 1295px;
+    }
+    #till-card{
+        height: 1700px;
+    }
+
+
+
 }
 
 
