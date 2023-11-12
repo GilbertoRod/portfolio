@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilberto Rodriguez</title>
+    <title>Gilberto Rodriguez fix</title>
     <link rel="icon" type="image/png" href="images/favicon.png" id="favicon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    
+
     <nav>
         <h1>GR</h1>
         <ul>
@@ -49,69 +49,41 @@
         </div>
 
 
+    <div class="container">
         <br><br><br><br>
         <center><big>Projects</big></center>
-        <div></div>
+   
         <hr id="project-hr">
         <div class="bottom-content">
-            <div class="card">
-                    <img src="images/tourney.png" class="card-image">
-                    <div class="info">
-                        <div class="text">
-                            <p class="card-title">Tourney manager</p>
-                            
-                            <p class="card-body-text">Tourney Manager was a full stack collaborative project that was created during my Junior year of University. I collaborated with three other individuals and we used the Laravel framework and the SCRUM agile system to develop our website application. We met in-person every other week to discuss about any different algorithms or features that we wanted to implement.  This website application was intended for users to be able to create an account and create a tournament of different teams that allowed other users to join. I was in charge of the graphic design, the system sequence diagrams, and some of the front-end development for this project. 
-                                <br><br>
-                                <div><img src="images/laravel.png" height="24px" class="stack-image"><img src="images/php.png" height="24px" class="stack-image"><img src="images/html-css.png" height="24px" class="stack-image"></div>
-                            </p>
-                        </div>
-                        
-                    </div>
+            <div class="card" id="tourney-card">
+                <div class="card-img card-1"></div>
+                <h2 class="card-title">Tourney Manager</h2>
+                <p class="card-para">Tourney Manager was a full-stack collaborative project that was created during my Junior year of University. I collaborated with three other individuals and we used the Laravel framework and the SCRUM agile system to develop our website application. We met in person every other week to discuss any different algorithms or features that we wanted to implement. This website application was intended for users to be able to create an account and create a tournament of different teams that allowed other users to join. I was in charge of the graphic design, the system sequence diagrams, and some of the front-end development for this project.</p>
+                <div class="stack"><img src="images/laravel.png" height="40px"><img src="images/php.png" height="40px"><img src="images/html-css.png" height="40px"></div>
+                
             </div>
-            <div class="card">
-                <img src="images/secretsanta.PNG" class="card-image">
-                <div class="info">
-                    <div class="text">
-                        <p class="card-title">Secret Santa</p>
-                        <div class="repo"><a href="https://github.com/GilbertoRod/SecretSanta" target="_blank"><img src="images/github.png" height="35px"></a></div>
-                        <p class="card-body-text">Secret Santa was a personal CRUD website that I created to facilitate a secret santa event for my family. This website allowed users to input, edit, or delete their information such as their sizes, interests, and favorite colors. All of the data was displayed in a table that contained every entry from every participant in each row. There was also an edit and delete button in each row so that the participants could change their interests/sizes if they wanted to. I built this website using SQL, PHP, CSS, and HTML. I also used inifinityfree to host the website and MySQL to manage my database.
-                            <br><br>
-                            <div><img src="images/mysql.png" height="24px" class="stack-image"><img src="images/php.png" height="24px" class="stack-image"><img src="images/html-css.png" height="24px" class="stack-image"></div>
-                        </p>
-                    </div>
-                    
-                </div>
+            <div class="card" id="santa-card">
+                <div class="card-img card-2"></div>
+                <h2 class="card-title">Secret Santa</h2>
+                <p class="card-para">Secret Santa was a personal CRUD website that I created to facilitate a Secret Santa event for my family. This website allows users to input, edit, or delete their information such as their sizes, interests, and favorite colors. All of the data was displayed in a table that contained every entry from every participant in each row. There was also an edit and delete button in each row so that the participants could change their interests/sizes if they wanted to. I built this website using SQL, PHP, CSS, and HTML. I also used infinityFree to host the website and MySQL to manage my database.</p>
+                <div class="stack"><img src="images/mysql.png" height="40px"><img src="images/php.png" height="40px"><img src="images/html-css.png" height="40px"></div>
+                <div class="github-div"><a href="https://github.com/GilbertoRod/SecretSanta"><img src="images/github.png" height="40px"></a></div>
             </div>
-
             <div class="card" id="till-card">
-                <img src="images/tillcount.PNG" class="card-image">
-                <div class="info">
-                    <div class="text">
-                        <p class="card-title">TillCount</p>
-                        <div class="repo"><a href="https://github.com/GilbertoRod/TillCount" target="_blank"><img src="images/github.png" height="35px"></a></div>
-                        <p class="card-body-text">TillCount was a website that I created to help me countdown cash registers at my previous job. At my previous job, we had a policy where the supervisors were in charge of counting down the cash registers everytime we wanted to have a different person on the register. This policy was made to ensure that the person wasn't short or over of their expected cash amount. We counted them down using a calculator but this was very ineffiecient because any wrong input would mess up the entire calculation, this led me to create TillCount. Using HTML CSS and JavaScript, TillCount allows the user to insert the quantity of bills, coins, and rolls. Once the User clicks the calculate button, TillCount calculates the difference between the expected amount and the counted amount and then displays the Over/Short amount.
-                            <br><br>
-                            <div><img src="images/js.png" height="24px" class="stack-image"><img src="images/html-css.png" height="24px" id="js-logo" class="stack-image"></div>
-                        </p>
-                    </div>
-                    
-                </div>
+                <div class="card-img card-3"></div>
+                <h2 class="card-title">TillCount</h2>
+                <p class="card-para">TillCount was a website that I created to help me countdown cash registers at my previous job. At my previous job, we had a policy where the supervisors were in charge of counting down the cash registers every time we wanted to have a different person on the register. This policy was made to ensure that the person wasn't short or over their expected cash amount. We counted them down using a calculator but this was very inefficient because any wrong input would mess up the entire calculation, this led me to create TillCount. Using HTML CSS and JavaScript, TillCount allows the user to insert the quantity of bills, coins, and rolls. Once the User clicks the calculate button, TillCount calculates the difference between the expected amount and the counted amount and then displays the Over/Short amount.</p>
+                <div class="stack"><img src="images/js.png" height="40px"><img src="images/html-css.png" height="40px"></div>
+                <div class="github-div"><a href="https://github.com/GilbertoRod/TillCount"><img src="images/github.png" height="40px"></a></div>
+            </div>
+            <div class="card" id="portfolio-card">
+                <div class="card-img card-4"></div>
+                <h2 class="card-title">Portfolio Website</h2>
+                <p class="card-para">This is my personal portfolio that I created while only using my HTML and CSS skills. I've designed every aspect to reflect my style and creativity. This website is where I showcase all the cool projects I've worked on, hoping to impress any potential future employers.</p>
+                <div class="stack"><img src="images/html-css.png" height="40px"></div>
+                <div class="github-div"><a href="https://github.com/GilbertoRod/portfolio"><img src="images/github.png" height="40px"></a></div>
             </div>
             
-            <div class="card" id="small-card">
-                <img src="images/portfolio.png" class="card-image">
-                <div class="info">
-                    <div class="text">
-                        <p class="card-title">Portfolio Website</p>
-                        <div class="repo"><a href="https://github.com/GilbertoRod/portfolio" target="_blank"><img src="images/github.png" height="35px"></a></div>
-                        <p class="card-body-text">This is my personal portfolio that I created while only using my HTML and CSS skills. I've designed every aspect to reflect my style and creativity. This website is where I showcase all the cool projects I've worked on, hoping to impress any potential future employers.
-                            <br><br>
-                            <div><img src="images/html-css.png" height="34px" class="stack-image"></div>
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
     </div>
 </body>
