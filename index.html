@@ -18,9 +18,21 @@
     <nav>
         <h1>GR</h1>
         <ul>
-            <a href="mailto:betovenr17@gmail.com" id="contact-link"><li id="contact">Contact</li></a>
+            <a href="mailto:betovenr17@gmail.com" target="_blank" id="contact-link"><li id="contact">Contact</li></a>
             <a href="https://drive.google.com/file/d/19AM56GKHTOnY-78SledJTuT4ydG04Cnt/view?usp=sharing" id="resume-link" target="_blank"><li id="resume">Resume</li></a>
         </ul>
+
+        <div class="hamburger-container" onclick="toggleSideMenu()">
+            <div class="js-line-1 hamburger-line-1"></div>
+            <div class="js-line-2 hamburger-line-2"></div>
+            <div class="js-line-3 hamburger-line-3"></div>
+          </div>
+          <div class="js-sidebar">
+            <ul class="sidebar-list">
+              <li class="js-resume"></li>
+              <li class="js-contact"></li>
+            </ul>
+          </div>
         
 
     </nav>
@@ -86,5 +98,35 @@
             
         </div>
     </div>
+
+    <script>
+    function toggleSideMenu() {
+      const sidebar=document.querySelector(".js-sidebar");
+      if (sidebar.classList.contains("sidebar")){
+        sidebar.classList.remove("sidebar");
+        document.querySelector(".js-resume").innerHTML="";
+        document.querySelector(".js-contact").innerHTML="";
+        document.querySelector(".js-line-1").classList.add("hamburger-line-1");
+        document.querySelector(".js-line-2").classList.add("hamburger-line-2");
+        document.querySelector(".js-line-3").classList.add("hamburger-line-3");
+        document.querySelector(".js-line-1").classList.remove("x-line-1");
+        document.querySelector(".js-line-2").classList.remove("x-line-2");
+        document.querySelector(".js-line-3").classList.remove("x-line-none");
+
+      }
+      else{
+        sidebar.classList.add("sidebar");
+        document.querySelector(".js-resume").innerHTML="<a href=\"https://drive.google.com/file/d/19AM56GKHTOnY-78SledJTuT4ydG04Cnt/view?usp=sharing\" target=\"_blank\" class='ham-anchor'>Resume</a>";
+        document.querySelector(".js-contact").innerHTML="<a href=\"mailto:betovenr17@gmail.com\" target=\"_blank\" class='ham-anchor'>Contact</a>";
+        document.querySelector(".js-line-1").classList.add("x-line-1");
+        document.querySelector(".js-line-2").classList.add("x-line-2");
+        document.querySelector(".js-line-3").classList.add("x-line-none");
+        if (sidebar.style.left === "-500px") {
+            // Add a class to trigger the slideBack transition only when the sidebar is hidden
+            sidebar.classList.add("slide-back-animation");
+        }
+      }
+    }
+    </script>
 </body>
 </html>

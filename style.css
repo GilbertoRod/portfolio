@@ -39,7 +39,7 @@ nav ul li{
 
     display: inline;
     float:right;
-    margin-right: 130px;
+    margin-right: 80px;
     
 }
 
@@ -56,6 +56,12 @@ nav ul li{
     font-size: 18px;
     
 
+}
+.js-sidebar{
+    display: none;
+}
+.no-sidebar{
+    display: none;
 }
 #contact{
     
@@ -441,6 +447,7 @@ footer hr{
     max-width: 478px;
     }
 
+
 }
 
 
@@ -464,8 +471,112 @@ footer hr{
         
     }
     
+    .hamburger-container {
+     
+        display: inline-block;
+        position:fixed;
+        left: 30px;
+        cursor: pointer;
+        top:20px;
+        z-index: 2;
+  
+      }
+      .hamburger-line-1, .hamburger-line-2, .hamburger-line-3{
+        height:5px;
+        width: 37px;
+        background-color: aliceblue;
+        margin-top: 7px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px white;
+        transition: -webkit-transform .15s, transform .05s;
+      }
+      .sidebar{
+        height:100%;
+        width: 300px;
+        background-color: rgb(30, 34, 44);
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.521);
+        position:fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: slideRight .15s;
+      }
+      
+      @keyframes slideRight {
+        from{left:-500px}
+        to{left:0px}
+      }
+  
+
+
+        .slide-back-animation {
+            animation: slideBack .15s;
+        }
+        
+        @keyframes slideBack {
+            from {
+                left: 0px;
+            }
+        
+            to {
+                left: -500px;
+            }
+        }
+  
+  
+      .sidebar-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: rgb(79, 235, 144);
+        text-decoration: underline;
+        text-decoration-color: white;
+        line-height: 70px;
+        font-size: 32px;
+        font-family: arial;
+      }
+      .x-line-2{
+        transform:rotate(-49deg) translateY(10px);
+        -webkit-transform:rotate(-49deg) translateY(10px);
+        transform-origin:10%;
+        -webkit-transform-origin:10%;
+        width: 35px;
+  
+  
+      }
+      .x-line-1{
+        transform:rotate(44deg) translateX(5px);
+        -webkit-transform:rotate(44deg) translateX(5px);
+        transform-origin:30%;
+        -webkit-transform-origin:30%;
+        width: 36px;
+      }
+      .x-line-none{
+        background-color:transparent;
+        box-shadow: none;
+  
+      }
+      .ham-anchor{
+        text-decoration: none;
+        color: rgb(79, 235, 144);
+        font-family: Oxygen;
+    
+        
+      }
+      .ham-anchor:hover{
+        text-decoration: underline;
+        text-decoration-color: white;
+
+      }
+
+
+
+
     #resume{
-        display: block;
+        display: none;
         padding: 12px;
         background-color: rgb(30, 34, 44);
         border: 2px solid rgb(79, 235, 144);
@@ -482,7 +593,7 @@ footer hr{
     }
     #contact{
         
-        display: block;
+        display: none;
         padding: 12px;
         background-color: rgb(30, 34, 44);
         border: 2px solid rgb(79, 235, 144);
